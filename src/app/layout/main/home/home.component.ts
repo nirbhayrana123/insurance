@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Title, Meta } from '@angular/platform-browser';
 import * as AOS from 'aos';
 @Component({
   selector: 'app-home',
@@ -8,10 +9,18 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  title = 'Insurance, Benefits, Investments, & Retirement';
+
+ constructor(private titleService: Title, private metaService: Meta) {}
 
   ngOnInit(): void {
     AOS.init();
+    this.titleService.setTitle(this.title);
+    this.metaService.addTags([
+      {name: 'keywords', content: ''},
+      {name: 'description', content: ''},
+      {name: 'robots', content: 'index, follow'}
+    ]);
   }
 
   customOptions: OwlOptions = {

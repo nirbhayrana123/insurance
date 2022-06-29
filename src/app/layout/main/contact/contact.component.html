@@ -3,7 +3,6 @@
          
       </div>  
   
-     
  
  
  
@@ -12,24 +11,25 @@
           <div class="row">  
           
            <div class="col-md-1 col-sm-12">  </div>
-           
-           
              <div class="col-md-4 col-sm-12">
                  <div class="maneg-sineup">
                  <div class="contac-filipcart">
                      <div class="flip-card" tabindex="0">
-                     <div class="flip-card-inner"> 
-                     <div class="flip-card-back">
-                     <div class="filipbacksheap">
-                     <div class="filipbackcontact">
-                     <span class="user"> <i class="fas fa-user-friends"></i></span><p>Committed To Our Clients</p>
+                         <div class="flip-card-inner"> 
+                            <div class="flip-card-back">
+                               <div class="filipbacksheap">
+                                   <div class="filipbackcontact">
+                              <span class="user"> 
+                                  <i class="fas fa-user-friends"></i>
+                                </span>
+                               <p>Committed To Our Clients</p>
+                          </div>
                      </div>
-                     </div>
-                     </div>
-                     </div>
-                     </div>
-                     </div>  
-                      </div>
+              </div>
+            </div>
+          </div>
+         </div>  
+     </div>
                      <div class="mange-sin">
                          <div class="contac-filipcart">
                              <div class="flip-card" tabindex="0">
@@ -63,84 +63,80 @@
                      </div>
               </div>    
               <div class="col-md-1 col-sm-12">  </div>
-              
-              
-              
-   <div class="col-md-6 col-sm-12">  
-        <div class="Contact-form">  
-             <h4>Drop us a line</h4>
-             <form >  
-             <div class="row">   
-             <div class="col-md-6 col-sm-12">  
-               <input type="text" class="form-control" id="yourname" placeholder="Your Name *">
-             </div>
-              
-             <div class="col-md-6 col-sm-12">  
-                <input type="text" class="form-control" placeholder="Your Email *">
-             </div>
-             
-             <div class="col-md-6 col-sm-12"> 
-                <input type="tel" class="form-control" placeholder="Your Phone">
-             </div>
-              
-             <div class="col-md-6 col-sm-12"> 
-                <input type="text" class="form-control" placeholder="Subject">
-             </div>
-                     
-             <div class="col-md-12 col-sm-12"> 
-              <textarea class="form-control" id="validationTextarea" placeholder="Your Message ..."></textarea>
-               </div> 
-               </div>  
- 
-               <p>Im interested in help with ...  </p>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                 <label class="form-check-label" for="inlineCheckbox1">Life Insurance ( Term / Permanent )</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                 <label class="form-check-label" for="inlineCheckbox2">Living Benefits ( Critical / Disability )</label>
-               </div>
-               <div class="form-check ">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                 <label class="form-check-label" for="inlineCheckbox3">Health & Dental Coverage</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                 <label class="form-check-label" for="inlineCheckbox4">Travel / Super-Visa</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                 <label class="form-check-label" for="inlineCheckbox5">Kids Education - RESP</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
-                 <label class="form-check-label" for="inlineCheckbox6">Registered Investment (RRSP , LIRA, LIF, RRIF)</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
-                 <label class="form-check-label" for="inlineCheckbox7">Non-Registered Account</label>
-               </div>
-               <div class="form-check ">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
-                 <label class="form-check-label" for="inlineCheckbox8">Tax-Free Saving Account</label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
-                 <label class="form-check-label" for="inlineCheckbox9">Estate Planning</label>
-               </div>
- 
-               <div class="form-check">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option01">
-                 <label class="form-check-label" for="inlineCheckbox10">Job Opportunity</label>
-               </div> 
-               
-               <button class="btn-1 comon-btn submited">Submit</button>
-              </form>
-         </div>  
-    </div>
+                 <div class="col-md-6 col-sm-12">  
+                    <div class="Contact-form">  
+                        <h4>Drop us a line</h4>
+                        <form (ngSubmit)="submitForm()" #basicDetails="ngForm">  
+                        <div class="row">   
+                        <div class="col-md-6 col-sm-12">  
+                          <input type="text" class="form-control" name="name" placeholder="Your Name *" [(ngModel)]="name">
+                        </div> 
+                        <div class="col-md-6 col-sm-12">  
+                            <input type="text" class="form-control" name="email" placeholder="Your Email *" [(ngModel)]="email">
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-12"> 
+                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone" [(ngModel)]="phone">
+                        </div>
+                          
+                        <div class="col-md-6 col-sm-12"> 
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" [(ngModel)]="subject">
+                        </div>
+                                
+                        <div class="col-md-12 col-sm-12"> 
+                          <textarea class="form-control" id="validationTextarea" name="message" placeholder="Your Message ..." [(ngModel)]="message"></textarea>
+                          </div> 
+                          </div>  
+            
+                          <p>Im interested in help with ...  </p>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="lifeinsorance" value="Life Insurance ( Term / Permanent )">
+                            <label class="form-check-label" for="inlineCheckbox1">Life Insurance ( Term / Permanent )</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Living Benefits ( Critical / Disability )</label>
+                          </div>
+                          <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Health & Dental Coverage</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Travel / Super-Visa</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label" for="inlineCheckbox5">Kids Education - RESP</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                            <label class="form-check-label" for="inlineCheckbox6">Registered Investment (RRSP , LIRA, LIF, RRIF)</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                            <label class="form-check-label" for="inlineCheckbox7">Non-Registered Account</label>
+                          </div>
+                          <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                            <label class="form-check-label" for="inlineCheckbox8">Tax-Free Saving Account</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                            <label class="form-check-label" for="inlineCheckbox9">Estate Planning</label>
+                          </div>
+            
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option01">
+                            <label class="form-check-label" for="inlineCheckbox10">Job Opportunity</label>
+                          </div> 
+                          
+                          <button class="btn-1 comon-btn submited">Submit</button>
+                          </form>
+                    </div>  
+                </div>
              </div> 
              </div>
-               </section> 	
-             
+  
+        </section> 	
   </main>    

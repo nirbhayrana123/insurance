@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,9 +14,9 @@ import { EstateplanningComponent } from './layout/main/estateplanning/estateplan
 import { InsuranceComponent } from './layout/main/insurance/insurance.component';
 import { InvestmentComponent } from './layout/main/investment/investment.component';
 import { HomeComponent } from './layout/main/home/home.component';
-import { FormsModule } from '@angular/forms';
+
 import { NotfoundComponent } from './layout/main/notfound/notfound.component';
-import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component';
+import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'; 
 
 @NgModule({
   declarations: [
@@ -31,10 +32,10 @@ import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'
     InvestmentComponent,
     HomeComponent,
     NotfoundComponent,
-    GetaquoteComponent,
+    GetaquoteComponent 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     FormsModule,
     CarouselModule

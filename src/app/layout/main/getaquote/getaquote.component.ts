@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-getaquote',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetaquoteComponent implements OnInit {
 
-  constructor() { }
+  title = 'Insurance, Benefits, Investments, & Retirement';
 
-  ngOnInit(): void {
+  constructor(private titleService: Title, private metaService: Meta) {}
+
+ ngOnInit(): void {
+    AOS.init();
+    this.titleService.setTitle(this.title);
+    this.metaService.addTags([
+      {name: 'keywords', content: ''},
+      {name: 'description', content: ''},
+      {name: 'robots', content: 'index, follow'}
+    ]);
   }
 
 }
