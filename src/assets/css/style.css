@@ -394,15 +394,12 @@ a:hover {
     border-right: 9px solid transparent;
     border-bottom: 29px solid #111340;
     border-left: 29px solid transparent;
-    -webkit-transform: rotate( 351deg );
-    -moz-transform: rotate(-70deg);
-    -ms-transform: rotate(-70deg);
-    -o-transform: rotate(-70deg);
+    transform: rotate( 351deg ); 
     top: 62px;
     left: -30px;
 }
 .maneg-sineup {
-    margin-top: 100px;
+    margin-top: 5px;
 }
 .mange-sin {
     margin-top: 100px;
@@ -636,7 +633,7 @@ h2.retirements {
  
 @media only screen and (min-width: 1600px) {
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
  }
 }
@@ -667,10 +664,12 @@ main {
 .logo {
     width: 80px;
 }
-.main-header {
+.main-header {    
     display: flex;
     align-items: center;
-    padding: 22px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    justify-content: space-between;
 }
 .charge {
     margin-top: 80px;
@@ -707,13 +706,13 @@ header {
     padding-left: 50px;
 }
 .main-header ul li a {
-    font-size: 14px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.035em;
 }
 .main-header ul.manu li {
-    padding: 20px 10px;
+    padding: 10px 15px;
 }
 ul li {
     list-style: none;
@@ -750,8 +749,7 @@ ul li {
 }
 
 .banner h3 {
-    font-size: 20px;
-    width: 1000px;
+    font-size: 20px; 
     text-align: center;
     font-family: 'Macondo', cursive;
 }
@@ -1568,10 +1566,14 @@ body.about-page .main-header {
     padding: 8px 0px;
 } 
 
-
 .banner-About {
     height: 730px;
-    margin-top: 130px;
+    margin-top: 110px;
+}
+.banner-About.contactbner {
+    height: 362px;
+    margin-top: 90px;
+    background-size: contain;
 }
 
 .aboutr {
@@ -1618,13 +1620,11 @@ body.about-page .main-header {
     padding: 30px 0px;
 }
 .Life-Insurance {
-    background: #E2EAF5;
-    width: 330px;
+    background: #E2EAF5; 
     border-radius: 10px;
     text-align: center;
     padding: 26px 0px;
-    min-height: 400px;
-    height: 400px;
+    min-height: 430px; 
 }
 .Life-Insurance:hover {
     background: #003478;
@@ -2088,7 +2088,7 @@ section.Contact {
 }
 
 .Contact-form {
-    margin-top: 100px;
+    margin-top: 5px;
 }
 .call-main {
     padding: 60px 0px;
@@ -2502,6 +2502,7 @@ a.drop-us {
 }
 .inner h2.sub-line {
     font-size: 30px;
+    font-family: 'Macondo', cursive;
 }
 .insuranceslider-main { 
     text-align:center;
@@ -2552,11 +2553,40 @@ a.drop-us {
     background: #25A4FF;
     padding: 20px 0px;
 }
+.segreated-we.bottomSections {
+    padding-bottom: 80px;
+}
 /********************GET IN TOUCH-end**********************/
  
  
 /********************GET IN TOUCH-end**********************/
  
+@media only screen and (max-width: 1499px) {
+.main-header ul.manu li {
+    padding: 10px 9px;
+}
+.main-header ul li a {
+    font-size: 14px; 
+}
+.logo {
+    width: 57px;
+}
+.banner-About { 
+    margin-top: 90px;
+    height: 457px; 
+}
+.living-b h3 { 
+    font-size: 22px;
+}
+.segreated-we h2 { 
+    font-size: 30px;
+}
+section.invetmente-fucher {
+    padding-bottom: 66px;
+}
+
+}
+
 
 @media only screen and (max-width: 1199px) {
  

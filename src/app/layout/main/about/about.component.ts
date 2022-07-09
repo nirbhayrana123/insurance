@@ -33,6 +33,7 @@ export class AboutComponent implements OnInit {
     pullDrag: true,
     dots: true,
     navSpeed: 700,
+    margin:15,
     navText: ['', ''],
     responsive: {
       0: {

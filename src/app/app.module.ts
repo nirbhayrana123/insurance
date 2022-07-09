@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
-
+import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -18,9 +16,9 @@ import { EstateplanningComponent } from './layout/main/estateplanning/estateplan
 import { InsuranceComponent } from './layout/main/insurance/insurance.component';
 import { InvestmentComponent } from './layout/main/investment/investment.component';
 import { HomeComponent } from './layout/main/home/home.component';
-
 import { NotfoundComponent } from './layout/main/notfound/notfound.component';
 import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'; 
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -38,7 +36,8 @@ import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'
     NotfoundComponent,
     GetaquoteComponent 
   ],
-  imports: [
+  imports: [ 
+    HttpClientModule,
     BrowserModule, 
     AppRoutingModule,
     FormsModule,
