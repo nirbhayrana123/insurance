@@ -36,7 +36,7 @@ import { RouterModule } from '@angular/router';
     NotfoundComponent,
     GetaquoteComponent 
   ],
-  imports: [ 
+  imports: [
     HttpClientModule,
     BrowserModule, 
     AppRoutingModule,
