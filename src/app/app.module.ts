@@ -1,8 +1,12 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'; 
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -38,9 +42,9 @@ import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'
     BrowserModule, 
     AppRoutingModule,
     FormsModule,
-    CarouselModule
+    CarouselModule, 
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

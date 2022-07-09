@@ -2697,15 +2697,15 @@ ul.search-defalt li a i.fas.fa-search {
     flex-wrap: wrap;
     position: fixed;
     background-color: #158773;
-    width: 100%;
+    width: 60%;
     left: -100%;
     right: 0;
     top: 0;
-    padding: 15px;
+    padding: 84px 30px 0;
     transition: 1s;
     display: block;
     height: 100vh;
-	z-index:999;
+    z-index: 999;
 }
  	
 .banner {
