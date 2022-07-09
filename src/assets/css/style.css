@@ -865,13 +865,13 @@ section.Insurance-section {
     font-size: 15px;
     font-weight: 500;
 }
-.optimized h4 {font-weight: bold;
+.optimized h4 {    font-weight: 500;
     padding-top: 20px;
     line-height: 40px;
     font-size: 30px;
 }
 .happy h4 {
-    font-weight: bold;
+        font-weight: 500;
     line-height: 40px;
     font-size: 30px;
 }
@@ -2558,6 +2558,10 @@ a.drop-us {
 .segreated-we.bottomSections {
     padding-bottom: 80px;
 }
+button.btn-1.comon-btn.submited,input.form-control.btn_1 {
+    cursor: pointer;
+}
+
 /********************GET IN TOUCH-end**********************/
  
  
