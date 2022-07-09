@@ -79,15 +79,6 @@ export class AboutComponent implements OnInit {
     nav: true
   }
 
-
-
-
-
-
-
-
-
-
   lifeslider: OwlOptions = {
     loop: true,
     items: 4,
@@ -143,8 +134,6 @@ export class AboutComponent implements OnInit {
     },
     nav: true
   }
-
-
 
 
 }
