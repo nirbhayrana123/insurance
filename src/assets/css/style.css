@@ -190,13 +190,13 @@ svg {
     50% {bottom: 100px !important;left: 45px;} /* ignored */
     to {bottom:  100px;left: 45px;}
   }
-  .catha{
-    width: 100px;
-    height: 100px;
+  .catha {
+    width: 300px;
+    height: 260px;
     position: relative;
-   animation: example infinite;
-  animation-duration: 3s;
-  }
+    animation: example infinite;
+    animation-duration: 3s;
+}
   @keyframes example {
     0%   {top: 0px;
         left: 160px;}
@@ -1669,8 +1669,10 @@ section.video-main {
 .investment-planning {
     background-size: 100%;
     margin: 0;
-    height: 645px;
+    height: 790px;
 }
+
+
 .video-right h4 {
     font-weight: 700;
     line-height: 24px;
@@ -2584,7 +2586,13 @@ a.drop-us {
 section.invetmente-fucher {
     padding-bottom: 66px;
 }
-
+.banner-About.contactbner {
+    height: 445px; 
+    background-size: 85% 100%;
+}
+section.Contact {
+    padding-top: 50px;
+}
 }
 
 
@@ -2750,7 +2758,7 @@ h1 {
     font-size: 15px;
 } 	
 section {
-    padding: 0px 0px;
+    padding: 30px 0px;
 }
 .blog h3 {
     margin: 0; 
@@ -2902,6 +2910,34 @@ ul.example {
 .close-menu img {
     width: 20px;
 }
+@keyframes example {
+    0%   {top: 0px;
+        left: 30px;}
+    25%  {    top: 109px;
+        left: 30px;}
+    75%  {top: 0;
+        left: 30px;}
+    100% {top: 0;
+        left: 30px;}
+  }
+  .provided-company {
+    margin-top: 40px;
+}
+.lifeline-img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.banner-About {
+    height: 420px;
+}
+.filipbackcontact {
+    width: 100%;
+}
+.Contact-form {
+    margin-top: 60px;
+}
 
 
 }
@@ -3032,8 +3068,10 @@ section.how-does {
 }
 
 .banner {
-    padding: 130px 0px 0px;
+    padding: 110px 0px 0px;
 }
+
+
 .simply h3 { 
     font-size: 25px;
 } 
@@ -3174,7 +3212,7 @@ h4.cursive {
     margin-bottom: 30px;
 }
 .investment-planning {
-    margin-top: 130px;
+    margin-top: 70px;
 }
 section.blog-section {
     background-color: #fbfcff;
@@ -3212,6 +3250,32 @@ section.blog-section {
     width: 100%; 
     height: auto;
 }
+.customers span {
+    display: block;
+    font-weight: 500;
+}
+.happy h4 {
+    font-size: 25px;
+}
+.optimized h4 { 
+    font-size: 25px;
+}
+.banner p span { 
+    display: block;
+    font-weight: 500;
+}
+
+
+@keyframes example {
+    0%   {top: 0px;
+        left: 0px;}
+    25%  {    top: 109px;
+        left: 0px;}
+    75%  {top: 0;
+        left: 0px;}
+    100% {top: 0;
+        left: 0px;}
+  }
 }
 /********************home-recponce-end**********************/
 
