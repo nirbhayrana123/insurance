@@ -30,8 +30,9 @@ a:hover {
 }
 main{overflow: hidden;}
 .company-logo img {
-    width: 100px!important;
+    width: 230px!important;
     margin: 0 auto;
+    height: 75px;
 }
 .all-logo h3 {
     text-align: center;
@@ -3176,6 +3177,10 @@ section.blog-section {
 }
 .lt-work h6::after { 
     top: 45px;
+}
+.company-logo img {
+    width: 100%; 
+    height: auto;
 }
 }
 /********************home-recponce-end**********************/
