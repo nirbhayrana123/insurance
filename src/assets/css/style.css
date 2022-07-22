@@ -24,7 +24,11 @@ a:hover {
 	align-items: center;
 }
 /************modal-css*****************************/
-
+.flexbutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .hidden {
 	display: none;
 }
@@ -1038,9 +1042,7 @@ section.Insurance-section {
 
 /*=================about-slider======================*/
 .author-info.p-t20 a.btn-1.comon-btn {
-    margin-top: 59%;
     display: inline-block;
-    margin-left: 75px;
 }
  
 .about-svg .item {
@@ -1080,7 +1082,6 @@ section.Insurance-section {
     vertical-align: middle;
 }
 .author-info.p-t20 {
-    display: table;
     width: 100%;
 }
 .author-signature h4 {
@@ -1571,7 +1572,8 @@ body.about-page .main-header {
 .banner-About.contactbner {
     height: 362px;
     margin-top: 90px;
-    background-size: contain;
+    background-size: 94% 100%;
+    background-position: center;
 }
 
 .aboutr {
@@ -1616,6 +1618,8 @@ body.about-page .main-header {
 } 
 .aboutsl {
     padding: 30px 0px;
+    width: 40%;
+    margin: 0 auto;
 }
 .Life-Insurance {
     background: #E2EAF5; 
@@ -2635,10 +2639,7 @@ a.btn-1.comon-btn {
     width: 100%; 
 }
 
-.author-info.p-t20 a.btn-1.comon-btn {
-    margin-top: 100%; 
-    margin-left: 25px;
-}
+
 .filipbackcontact { 
     width: 345px; 
 }
@@ -3195,7 +3196,6 @@ a.btn-1.comon-btn {
     margin: 0 auto;
 }
 .author-info.p-t20 {
-    display: table;
     width: 100%;
     text-align: center;
 }
