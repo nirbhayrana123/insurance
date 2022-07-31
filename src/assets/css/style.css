@@ -42,11 +42,24 @@ main{overflow: hidden;}
     text-align: center;
     margin-bottom: 40px;
     font-family: 'Macondo', cursive;
+    font-size: 40px;
+    font-weight: 700;
 }
 .car-content h4 img {
     width: 100px;
+    margin-left: auto;
+    float: right;
 }
-
+.copyright a {
+    font-size: 16px;
+    margin: 0px 4px;
+}
+.an-overview .Contact-form p {
+    font-size: 9px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #3d3b3b;
+}
 /******************animation***************/
 svg {
     width: 35%;
@@ -799,6 +812,7 @@ ul li {
 }
 .segreated-we h2{
     font-family: 'Macondo', cursive;
+    text-align: left;
 }
 .living-c h3{
     font-family: 'Macondo', cursive;
@@ -1197,8 +1211,21 @@ a.button:hover::after {
 }
 /***************************how-does***************/
 
-
-
+.Contact-form iframe.contactinptry {
+    height: 900px;
+}
+iframe.footer-form {
+    height: 700px;
+}
+iframe.financial {
+    height: 570px;
+}
+ .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #00a0d2;
+    margin: 0;
+}
 /*************************our-testimonials***************/
 .simply {
     background-color: #F9FAFB;
@@ -2559,6 +2586,10 @@ a.drop-us {
 }
 .segreated-we.bottomSections {
     padding-bottom: 80px;
+    padding-top: 0;
+}
+.segreated-we.bottomSections .car-content {
+    text-align: left;
 }
 button.btn-1.comon-btn.submited,input.form-control.btn_1 {
     cursor: pointer;
@@ -2590,7 +2621,7 @@ button.btn-1.comon-btn.submited,input.form-control.btn_1 {
     font-size: 30px;
 }
 section.invetmente-fucher {
-    padding-bottom: 66px;
+    padding-bottom: 20px;
 }
 .banner-About.contactbner {
     height: 445px; 

@@ -17,8 +17,13 @@ import { InsuranceComponent } from './layout/main/insurance/insurance.component'
 import { InvestmentComponent } from './layout/main/investment/investment.component';
 import { HomeComponent } from './layout/main/home/home.component';
 import { NotfoundComponent } from './layout/main/notfound/notfound.component';
-import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component'; 
-import { RouterModule } from '@angular/router';
+import { GetaquoteComponent } from './layout/main/getaquote/getaquote.component';
+import { PrivacyComponent } from './layout/main/privacy/privacy.component';
+import { TermsComponent } from './layout/main/terms/terms.component';
+import { EthicsComponent } from './layout/main/ethics/ethics.component'; 
+
+
+ 
 
 @NgModule({
   declarations: [
@@ -34,7 +39,10 @@ import { RouterModule } from '@angular/router';
     InvestmentComponent,
     HomeComponent,
     NotfoundComponent,
-    GetaquoteComponent 
+    GetaquoteComponent,
+    PrivacyComponent,
+    TermsComponent,
+    EthicsComponent 
   ],
   imports: [
     HttpClientModule,
