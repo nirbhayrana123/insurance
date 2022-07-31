@@ -18,16 +18,54 @@ import { NotfoundComponent } from './layout/main/notfound/notfound.component';
 const routes: Routes = [
    { path: '', component: HomeComponent, pathMatch: 'full',
    data: {
-    "pageTitle": "Insurance",
-    "description": "Instant no obligation quote: Life insurance  Group Benefits  No-Medical Exam Coverage  Supervisa Insurance"
+    "pageTitle": "Estate Nest",
+    "description": "Instant no obligation quote: Life insurance | Group Benefits | No-Medical Exam Coverage | Supervisa Insurance"
   }
   },
-   { path: 'about', component: AboutComponent },
-   { path: 'insurance', component: InsuranceComponent },
-   { path: 'investment', component: InvestmentComponent },
-   { path: 'estateplanning', component: EstateplanningComponent },
-   { path: 'blog', component: BlogComponent },
-   { path: 'contact', component: ContactComponent },
+   { path: 'about', component: AboutComponent, 
+  
+   data: {
+    "pageTitle": "About",
+    "description": "Estate Nest ties insurance, and investments to protect your family and your lifestyle throughout with coverage and retirement plan"
+  }
+  
+  
+  },
+   { path: 'insurance', component: InsuranceComponent ,
+   data: {
+    "pageTitle": "Insurance",
+    "description": "Get Free affordable online quotes | Protect your assets | Calculate in Minutes| Life insurance made easy & pleasant"
+  }
+  
+  
+  },
+   { path: 'investment', component: InvestmentComponent,
+   data: {
+    "pageTitle": "Investment",
+    "description": "Investments are stressful | Build your plan today | Grow your wealth"
+  }
+  },
+   { path: 'estateplanning', component: EstateplanningComponent, 
+  
+   data: {
+    "pageTitle": "Estate Planning",
+    "description": "Protect family assets: Will | Power of Attorney | Personal Directive"
+  }
+  },
+   { path: 'blog', component: BlogComponent,
+   data: {
+    "pageTitle": "Blog",
+    "description": "Your go-to source for information on estate planning, insurance, and personal finance subjects"
+  }
+  
+  },
+   { path: 'contact', component: ContactComponent,
+   data: {
+    "pageTitle": "Contact",
+    "description": "Honest | Keep it simple | Client focussed approach |Positive impact on our partners"
+  }
+  
+  },
    { path: 'getaquote', component: GetaquoteComponent },
    { path: 'details', component: DetailsComponent },
    { path: 'terms', component: TermsComponent },

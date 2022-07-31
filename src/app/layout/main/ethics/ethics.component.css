@@ -25,6 +25,17 @@ ul.advertise li {
     font-size: 20px;
     color: #5a58ff;
     text-decoration: underline;
-    margin: 15px 0px;
-    display: block;
 }
+
+@media only screen and (max-width: 1499px) {
+    .ethics h1 {
+        font-size: 35px;
+    }
+    .ethics h4 {
+        font-size: 30px;
+    }
+    .ethics p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    }

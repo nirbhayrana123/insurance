@@ -23,3 +23,17 @@
     align-items: flex-start;
     margin: 20px 0px;
 }
+
+
+@media only screen and (max-width: 1499px) {
+.pravacy h1 {
+    font-size: 35px;
+}
+.pravacy h4 {
+    font-size: 30px;
+}
+.pravacy p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+}
