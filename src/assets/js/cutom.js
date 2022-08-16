@@ -24,10 +24,10 @@ const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-modal");
 
-buttons.forEach((button) => button.addEventListener("mouseup", openModal));
-closeButton.addEventListener("mouseup", closeModal);
-overlay.addEventListener("mouseup", closeModal);
-document.addEventListener("keyup", escapeKeyHandle);
+// buttons.forEach((button) => button.addEventListener("mouseup", openModal));
+// closeButton.addEventListener("mouseup", closeModal);
+// overlay.addEventListener("mouseup", closeModal);
+// document.addEventListener("keyup", escapeKeyHandle);
 
 function openModal(e) {
 	overlay.classList.remove("hidden");
